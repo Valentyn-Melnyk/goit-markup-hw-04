@@ -97,6 +97,7 @@ button {
 .navigation-menu-items {
   font-weight: 500;
   font-style: normal;
+  color: #2e2f42;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -105,8 +106,8 @@ button {
   display: block;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #404bbf;
 }
+
 .navigation-menu-items:hover,
 .navigation-menu-items:focus {
   color: #404bbf;
@@ -161,6 +162,7 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .solution-header {
@@ -230,7 +232,7 @@ button {
 .advantages-items {
   width: calc((100% - 3 * 24px) / 4);
 }
-.advantages-sprite {
+/* .advantages-sprite {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
@@ -238,7 +240,19 @@ button {
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
   margin-bottom: 8px;
+} */
+
+.container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  margin-bottom: 8px;
 }
+
 .advantages-items-headers {
   color: #2e2f42;
   font-size: 20px;
