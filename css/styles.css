@@ -110,8 +110,7 @@ button {
 .navigation-menu-items:focus {
   color: #404bbf;
 }
-.navigation-menu-items:hover::after,
-.navigation-menu-items:focus::after {
+.navigation-menu-items:hover::after {
   position: absolute;
   width: 100%;
   height: 4px;
