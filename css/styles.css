@@ -303,6 +303,35 @@ button {
   margin-bottom: 8px;
 }
 
+/* -------------------Social media (Our Team)----------------- */
+.social-media-ul-our-team {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+  justify-content: center;
+}
+.social-media-li-our-team {
+  width: 40px;
+  height: 40px;
+}
+.social-media-a-our-team {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-a-our-team:hover,
+.social-media-a-our-team:focus {
+  background-color: #404bbf;
+}
+.social-media-svg-our-team {
+  fill: #f4f4fd;
+}
+
 /* --------------------------Portfolio---------------- */
 .portfolio {
   padding-top: 120px;
@@ -328,12 +357,37 @@ button {
 }
 .portfolio-items {
   width: calc((100% - 2 * 24px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-items:hover {
+.portfolio-items:hover,
+.portfolio-items:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-p-hidden {
+  position: absolute;
+  top: 0;
+  color: #f4f4fd;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-items:hover .portfolio-p-hidden {
+  transform: translateY(0%);
+}
+
 .portfolio-items-id {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -394,13 +448,7 @@ button {
   margin-bottom: 16px;
 }
 
-/* -------------------Social media (Our Team + Footer)----------------- */
-.social-media-ul-our-team {
-  display: flex;
-  list-style-type: none;
-  gap: 24px;
-  justify-content: center;
-}
+/* -------------------Social media (Footer)----------------- */
 .social-media-ul-footer {
   display: flex;
   list-style-type: none;
